@@ -5,7 +5,7 @@ interface IRepository<T> {
     create(item: T): void;
 }
 
-// Áp dụng cụ thể cho đối tượng User
+// Specifically applicable to User objects
 interface User2 { id: number; username: string; }
 
 class UserRepository implements IRepository<User> {
