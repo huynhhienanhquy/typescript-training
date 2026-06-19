@@ -1,6 +1,6 @@
 class GenericNumber<NumType> {
-    zeroValue!: NumType;
-    add!: (x: NumType, y: NumType) => NumType;
+  zeroValue!: NumType;
+  add!: (x: NumType, y: NumType) => NumType;
 }
 const myGenericNumber = new GenericNumber<number>();
 myGenericNumber.zeroValue = 0;
