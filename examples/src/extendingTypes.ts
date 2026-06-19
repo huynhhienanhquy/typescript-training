@@ -1,12 +1,12 @@
 interface Person {
-    name: string;
+  name: string;
 }
 
 interface Student extends Person {
-    studentId: string;
+  studentId: string;
 }
 
 const student: Student = {
-    name: "Quy",
-    studentId: "S12345"
+  name: "Quy",
+  studentId: "S12345",
 };

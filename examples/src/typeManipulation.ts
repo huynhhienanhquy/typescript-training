@@ -11,10 +11,7 @@ type User = typeof user;
 type UserKey = keyof User;
 
 // Generic
-function updateUser<K extends UserKey>(
-  key: K,
-  value: User[K]
-) {
+function updateUser<K extends UserKey>(key: K, value: User[K]) {
   user[key] = value;
 }
 

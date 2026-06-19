@@ -3,7 +3,9 @@ type isString<T> = T extends string ? true : false;
 type myString = isString<string>; // true
 type myNumber = isString<number>; // false
 
-type message<T> = T extends string ? "This is a string" : "This is not a string";
+type message<T> = T extends string
+  ? "This is a string"
+  : "This is not a string";
 
 type message1 = message<string>; // "This is a string"
 type message2 = message<number>; // "This is not a string"

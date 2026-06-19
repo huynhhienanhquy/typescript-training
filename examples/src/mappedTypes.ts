@@ -37,12 +37,12 @@ console.log(user5ReadOnlyExample);
 
 //In collaboration with Generics
 type nullable<T> = {
-    [K in keyof T]: T[K] | null;
+  [K in keyof T]: T[K] | null;
 };
 
 interface product1 {
-    id: number;
-    name: string;
+  id: number;
+  name: string;
 }
 
 type nullableProduct = nullable<product1>;

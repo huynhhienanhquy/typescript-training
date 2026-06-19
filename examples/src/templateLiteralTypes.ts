@@ -12,7 +12,7 @@ type shirt = `${color} ${size}`;
 
 let p1: shirt = "red small";
 let p2: shirt = "green medium";
-//let p3: shirt = "yellow large"; // Error      
+//let p3: shirt = "yellow large"; // Error
 
 //Combined with keyof
 interface user6 {

@@ -8,9 +8,7 @@ interface ApiResponse<T> {
   data: T;
 }
 
-function getData<T>(
-  data: T
-): ApiResponse<T> {
+function getData<T>(data: T): ApiResponse<T> {
   return {
     success: true,
     data,
