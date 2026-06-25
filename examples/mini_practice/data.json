@@ -1,0 +1,147 @@
+{
+  "students": [
+    { "id": "S001", "name": "Nguyen Van A", "age": 16, "classId": "C001" },
+    { "id": "S002", "name": "Tran Thi B", "age": 16, "classId": "C001" },
+    { "id": "S003", "name": "Le Van C", "age": 17, "classId": "C001" },
+    { "id": "S004", "name": "Pham Thi D", "age": 16, "classId": "C001" },
+    { "id": "S005", "name": "Hoang Van E", "age": 17, "classId": "C001" },
+
+    { "id": "S006", "name": "Vo Minh F", "age": 16, "classId": "C002" },
+    { "id": "S007", "name": "Tran Minh G", "age": 17, "classId": "C002" },
+    { "id": "S008", "name": "Nguyen Thi H", "age": 16, "classId": "C002" },
+    { "id": "S009", "name": "Le Quoc I", "age": 17, "classId": "C002" },
+    { "id": "S010", "name": "Pham Van K", "age": 16, "classId": "C002" },
+
+    { "id": "S011", "name": "Dang Thi L", "age": 16, "classId": "C003" },
+    { "id": "S012", "name": "Nguyen Van M", "age": 17, "classId": "C003" },
+    { "id": "S013", "name": "Tran Thi N", "age": 16, "classId": "C003" },
+    { "id": "S014", "name": "Le Van O", "age": 17, "classId": "C003" },
+    { "id": "S015", "name": "Hoang Thi P", "age": 16, "classId": "C003" }
+  ],
+
+  "teachers": [
+    { "id": "T001", "name": "Nguyen Teacher", "subjectId": "SUB001" },
+    { "id": "T002", "name": "Tran Teacher", "subjectId": "SUB002" },
+    { "id": "T003", "name": "Le Teacher", "subjectId": "SUB003" },
+    { "id": "T004", "name": "Pham Teacher", "subjectId": "SUB004" },
+    { "id": "T005", "name": "Hoang Teacher", "subjectId": "SUB005" }
+  ],
+
+  "subjects": [
+    { "id": "SUB001", "name": "Mathematics" },
+    { "id": "SUB002", "name": "Physics" },
+    { "id": "SUB003", "name": "Chemistry" },
+    { "id": "SUB004", "name": "English" },
+    { "id": "SUB005", "name": "Biology" }
+  ],
+
+  "classrooms": [
+    {
+      "id": "C001",
+      "name": "10A1",
+      "homeroomTeacherId": "T001"
+    },
+    {
+      "id": "C002",
+      "name": "10A2",
+      "homeroomTeacherId": "T002"
+    },
+    {
+      "id": "C003",
+      "name": "10A3",
+      "homeroomTeacherId": "T003"
+    }
+  ],
+
+  "scores": [
+    { "studentId": "S001", "subjectId": "SUB001", "score": 8.5 },
+    { "studentId": "S001", "subjectId": "SUB002", "score": 7.5 },
+    { "studentId": "S001", "subjectId": "SUB003", "score": 8.0 },
+    { "studentId": "S001", "subjectId": "SUB004", "score": 9.0 },
+    { "studentId": "S001", "subjectId": "SUB005", "score": 8.5 },
+
+    { "studentId": "S002", "subjectId": "SUB001", "score": 9.2 },
+    { "studentId": "S002", "subjectId": "SUB002", "score": 8.8 },
+    { "studentId": "S002", "subjectId": "SUB003", "score": 9.0 },
+    { "studentId": "S002", "subjectId": "SUB004", "score": 8.7 },
+    { "studentId": "S002", "subjectId": "SUB005", "score": 9.1 },
+
+    { "studentId": "S003", "subjectId": "SUB001", "score": 6.5 },
+    { "studentId": "S003", "subjectId": "SUB002", "score": 7.0 },
+    { "studentId": "S003", "subjectId": "SUB003", "score": 6.8 },
+    { "studentId": "S003", "subjectId": "SUB004", "score": 7.2 },
+    { "studentId": "S003", "subjectId": "SUB005", "score": 6.9 },
+
+    { "studentId": "S004", "subjectId": "SUB001", "score": 8.0 },
+    { "studentId": "S004", "subjectId": "SUB002", "score": 8.1 },
+    { "studentId": "S004", "subjectId": "SUB003", "score": 8.3 },
+    { "studentId": "S004", "subjectId": "SUB004", "score": 8.4 },
+    { "studentId": "S004", "subjectId": "SUB005", "score": 8.2 },
+
+    { "studentId": "S005", "subjectId": "SUB001", "score": 7.2 },
+    { "studentId": "S005", "subjectId": "SUB002", "score": 7.4 },
+    { "studentId": "S005", "subjectId": "SUB003", "score": 7.0 },
+    { "studentId": "S005", "subjectId": "SUB004", "score": 7.8 },
+    { "studentId": "S005", "subjectId": "SUB005", "score": 7.6 },
+
+    { "studentId": "S006", "subjectId": "SUB001", "score": 8.9 },
+    { "studentId": "S006", "subjectId": "SUB002", "score": 8.5 },
+    { "studentId": "S006", "subjectId": "SUB003", "score": 8.8 },
+    { "studentId": "S006", "subjectId": "SUB004", "score": 9.0 },
+    { "studentId": "S006", "subjectId": "SUB005", "score": 8.7 },
+
+    { "studentId": "S007", "subjectId": "SUB001", "score": 6.8 },
+    { "studentId": "S007", "subjectId": "SUB002", "score": 6.5 },
+    { "studentId": "S007", "subjectId": "SUB003", "score": 7.0 },
+    { "studentId": "S007", "subjectId": "SUB004", "score": 6.9 },
+    { "studentId": "S007", "subjectId": "SUB005", "score": 7.2 },
+
+    { "studentId": "S008", "subjectId": "SUB001", "score": 9.5 },
+    { "studentId": "S008", "subjectId": "SUB002", "score": 9.2 },
+    { "studentId": "S008", "subjectId": "SUB003", "score": 9.0 },
+    { "studentId": "S008", "subjectId": "SUB004", "score": 9.4 },
+    { "studentId": "S008", "subjectId": "SUB005", "score": 9.3 },
+
+    { "studentId": "S009", "subjectId": "SUB001", "score": 7.7 },
+    { "studentId": "S009", "subjectId": "SUB002", "score": 7.5 },
+    { "studentId": "S009", "subjectId": "SUB003", "score": 7.9 },
+    { "studentId": "S009", "subjectId": "SUB004", "score": 7.8 },
+    { "studentId": "S009", "subjectId": "SUB005", "score": 7.6 },
+
+    { "studentId": "S010", "subjectId": "SUB001", "score": 8.1 },
+    { "studentId": "S010", "subjectId": "SUB002", "score": 8.3 },
+    { "studentId": "S010", "subjectId": "SUB003", "score": 8.2 },
+    { "studentId": "S010", "subjectId": "SUB004", "score": 8.0 },
+    { "studentId": "S010", "subjectId": "SUB005", "score": 8.4 },
+
+    { "studentId": "S011", "subjectId": "SUB001", "score": 7.9 },
+    { "studentId": "S011", "subjectId": "SUB002", "score": 8.0 },
+    { "studentId": "S011", "subjectId": "SUB003", "score": 8.1 },
+    { "studentId": "S011", "subjectId": "SUB004", "score": 8.2 },
+    { "studentId": "S011", "subjectId": "SUB005", "score": 8.0 },
+
+    { "studentId": "S012", "subjectId": "SUB001", "score": 9.0 },
+    { "studentId": "S012", "subjectId": "SUB002", "score": 8.9 },
+    { "studentId": "S012", "subjectId": "SUB003", "score": 9.1 },
+    { "studentId": "S012", "subjectId": "SUB004", "score": 9.0 },
+    { "studentId": "S012", "subjectId": "SUB005", "score": 9.2 },
+
+    { "studentId": "S013", "subjectId": "SUB001", "score": 6.9 },
+    { "studentId": "S013", "subjectId": "SUB002", "score": 7.1 },
+    { "studentId": "S013", "subjectId": "SUB003", "score": 7.0 },
+    { "studentId": "S013", "subjectId": "SUB004", "score": 6.8 },
+    { "studentId": "S013", "subjectId": "SUB005", "score": 7.2 },
+
+    { "studentId": "S014", "subjectId": "SUB001", "score": 8.6 },
+    { "studentId": "S014", "subjectId": "SUB002", "score": 8.5 },
+    { "studentId": "S014", "subjectId": "SUB003", "score": 8.7 },
+    { "studentId": "S014", "subjectId": "SUB004", "score": 8.8 },
+    { "studentId": "S014", "subjectId": "SUB005", "score": 8.6 },
+
+    { "studentId": "S015", "subjectId": "SUB001", "score": 7.4 },
+    { "studentId": "S015", "subjectId": "SUB002", "score": 7.6 },
+    { "studentId": "S015", "subjectId": "SUB003", "score": 7.5 },
+    { "studentId": "S015", "subjectId": "SUB004", "score": 7.8 },
+    { "studentId": "S015", "subjectId": "SUB005", "score": 7.7 }
+  ]
+}
