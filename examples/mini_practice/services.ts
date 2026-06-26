@@ -1,6 +1,7 @@
 import { 
   student, 
-  score 
+  score,
+  column 
 } from "./models";
 
 // Abstract Generic Service
@@ -52,12 +53,6 @@ export class studentService extends baseService<student> {
 
     return Number((total / studentScores.length).toFixed(2));
   }
-}
-
-// Generic Table
-export interface column<T> {
-  key: keyof T;
-  title: string;
 }
 
 export class table<T> {
