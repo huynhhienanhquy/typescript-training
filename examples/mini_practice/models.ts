@@ -42,3 +42,9 @@ export interface schoolData {
   classrooms: classroom[];
   scores: score[];
 }
+
+// Generic Table
+export interface column<T> {
+  key: keyof T;
+  title: string;
+}
