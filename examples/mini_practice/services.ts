@@ -1,7 +1,7 @@
-import { 
-  student, 
+import {
+  student,
   score,
-  column 
+  column
 } from "./models";
 
 // Abstract Generic Service
@@ -11,12 +11,6 @@ export abstract class baseService<T extends { id: string }> {
   getAll(): T[] {
     return this.data;
   }
-
-  findById(id: string): T | undefined {
-    return this.data.find(item => item.id === id);
-  }
-
-  abstract display(item: T): void;
 }
 
 // Student Service
@@ -28,16 +22,7 @@ export class studentService extends baseService<student> {
     super(students);
   }
 
-  display(student: student): void {
-    console.log(
-      `${student.id} | ${student.name} | ${student.age} | ${student.classId}`
-    );
-  }
-
-  findByClass(classId: string): student[] {
-    return this.data.filter(student => student.classId === classId);
-  }
-
+  //Average score
   getAverageScore(studentId: string): number {
     const studentScores = this.scores.filter (
       scores => scores.studentId === studentId
