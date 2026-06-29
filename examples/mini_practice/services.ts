@@ -1,11 +1,11 @@
 import {
-  student,
-  score,
-  column
+  Student,
+  Score,
+  Column
 } from "./models";
 
 // Abstract Generic Service
-export abstract class baseService<T extends { id: string }> {
+export abstract class BaseService<T extends { id: string }> {
   constructor(protected data: T[]) {}
 
   getAll(): T[] {
@@ -14,10 +14,10 @@ export abstract class baseService<T extends { id: string }> {
 }
 
 // Student Service
-export class studentService extends baseService<student> {
+export class StudentService extends BaseService<Student> {
   constructor(
-    students: student[],
-    private scores: score[]
+    students: Student[],
+    private scores: Score[]
   ) {
     super(students);
   }
@@ -40,10 +40,10 @@ export class studentService extends baseService<student> {
   }
 }
 
-export class table<T> {
+export class Table<T> {
   constructor(
     private data: T[],
-    private columns: column<T>[]
+    private columns: Column<T>[]
   ) {}
 
   render(): void {
