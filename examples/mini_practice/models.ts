@@ -1,5 +1,5 @@
 // Student
-export interface student {
+export interface Student {
   id: string;
   name: string;
   age: number;
@@ -8,43 +8,43 @@ export interface student {
 }
 
 //Teacher
-export interface teacher {
+export interface Teacher {
   id: string;
   name: string;
   subjectId: string;
 }
 
 //Subject
-export interface subject {
+export interface Subject {
   id: string;
   name: string;
 }
 
 //Classroom
-export interface classroom {
+export interface Classroom {
   id: string;
   name: string;
   homeroomTeacherId: string;
 }
 
 //Score
-export interface score {
+export interface Score {
   studentId: string;
   subjectId: string;
   score: number;
 }
 
 //School Data
-export interface schoolData {
-  students: student[];
-  teachers: teacher[];
-  subjects: subject[];
-  classrooms: classroom[];
-  scores: score[];
+export interface SchoolData {
+  students: Student[];
+  teachers: Teacher[];
+  subjects: Subject[];
+  classrooms: Classroom[];
+  scores: Score[];
 }
 
 // Generic Table
-export interface column<T> {
+export interface Column<T> {
   key: keyof T;
   title: string;
 }
