@@ -1,0 +1,14 @@
+# Dependency directories (Thư viện cài thêm)
+node_modules/
+
+# Bundler caches
+.parcel-cache/
+
+# Build outputs
+dist/
+
+# IDEs and Editors
+.vscode/
+
+
+
