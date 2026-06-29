@@ -1,19 +1,19 @@
 import schooldata from "./data.json";
 
 import {
-  schoolData,
-  student,
-  teacher,
-  subject,
-  classroom,
+  SchoolData,
+  Student,
+  Teacher,
+  Subject,
+  Classroom,
 } from "./models";
 
-import { 
-  studentService 
-  as StudentService, 
-  table } from "./services";
+import {
+  StudentService
+  as StudentService,
+  Table } from "./services";
 
-const data: schoolData = schooldata;
+const data: SchoolData = schooldata;
 
 // Student Table
 console.log("===================STUDENT TABLE============");
@@ -28,11 +28,11 @@ const studentTableData = data.students.map(student => ({
   averageScore: studentService.getAverageScore(student.id)
 }));
 
-type studentTable = student & {
+type studentTable = Student & {
   averageScore: number;
 };
 
-const studentTable = new table<studentTable>(
+const studentTable = new Table<studentTable>(
   studentTableData,
   [
     { key: "id", title: "ID" },
@@ -48,7 +48,7 @@ studentTable.render();
 // Teacher Table
 console.log("==================TEACHER TABLE==============");
 
-const teacherTable = new table<teacher>(
+const teacherTable = new Table<Teacher>(
   data.teachers,
   [
     { key: "id", title: "ID" },
@@ -62,7 +62,7 @@ teacherTable.render();
 // Subject Table
 console.log("================= SUBJECT TABLE=============");
 
-const subjectTable = new table<subject> (
+const subjectTable = new Table<Subject> (
   data.subjects,
   [
     {key: "id", title: "ID"},
@@ -75,7 +75,7 @@ subjectTable.render();
 //classroom table
 console.log("================= CLASSROOM TABLE=============");
 
-const classroomTable = new table<classroom> (
+const classroomTable = new Table<Classroom> (
   data.classrooms,
   [
     {key: "id", title: "ID"},
